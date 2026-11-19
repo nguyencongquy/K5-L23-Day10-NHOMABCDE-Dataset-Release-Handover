@@ -2,8 +2,35 @@
 
 ## 1. Số liệu luyện tập
 - F1 theo seed (rule / cross_check / overall): <<seed: ... / ... / ...>>
-- Tổng ứng viên của hai module trên lô sạch: chờ `maskchecks.py` của Tiến. Kết quả riêng của `labelmatch.py` đã đo bên dưới.
-- Hàng đợi sau tích hợp trên seed luyện tập: <<... ảnh>>
+- Lô sạch sau tích hợp: **10 ứng viên trên 8/50 ảnh**.
+- Seed luyện tập `3007` sau tích hợp: **55 ứng viên trên 37/250 ảnh**.
+
+### Kết quả chạy chung
+
+Tích hợp `labelmatch.py` ở commit `06f2a9f` với `maskchecks.py` của Tiến ở
+commit `0470360`. Mỗi lô gọi `build_matches` một lần rồi truyền cùng dữ liệu
+cho hai hàm `find_candidates`, theo thứ tự của `validator/validate.py`.
+
+| Lô | Ảnh đọc | Bất đồng lớp | Thiếu box | Box lệch | Gộp instance | Tổng ứng viên | Ảnh có ứng viên |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Sạch | 50 | 0 | 0 | 0 | 10 | 10 | 8 |
+| `3007` | 250 | 4 | 1 | 5 | 45 | 55 | 37 |
+
+Với ca mô phỏng một segment phủ hai box, hai module giữ ID `70001` và hai
+chỉ số box `[0, 1]`. `maskchecks.py` tạo một ứng viên `instance_merge`, với
+1.200 pixel giao cho mỗi box.
+
+Hai phép kiểm của Tiến xét segment từ 1.024 pixel. Box cùng lớp có độ phủ
+tốt nhất dưới 75% là ứng viên lệch. Với ứng viên gộp, mỗi box phải phủ ít
+nhất 25% pixel của cùng segment và có ít nhất 32 pixel giao. Segment phải
+chiếm ít nhất 20% diện tích mỗi box, và IoU giữa hai box phải dưới 0,40.
+Các điều kiện này yêu cầu bằng chứng trên cả hai box và giảm các cặp box
+gần trùng. Giữ nguyên các điều kiện khác, tăng ngưỡng phủ
+segment lên 30% rồi 40% cho lần lượt 8 và 7 ứng viên gộp trên lô sạch, và 38
+và 25 trên `3007` (so với 10 và 45 ở 25%). Giữ mặc định 25% cho đợt review
+vì siết ngưỡng chỉ giảm 2–3 ứng viên gộp trên lô sạch, đồng thời giảm
+7–20 ứng viên gộp trên lô luyện tập. Số lượng này đo tải review. Nhóm
+cần xem ảnh để biết ngưỡng ảnh hưởng thế nào đến lỗi thật.
 
 ### Đối chiếu lớp và box thiếu
 
