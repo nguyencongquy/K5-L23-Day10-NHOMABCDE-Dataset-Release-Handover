@@ -1,0 +1,10 @@
+image,type,verdict,note
+000000001818,bbox_drift,rejected,"Phùng Danh Khoa xem ảnh. Box 0 bao ngựa vằn con và trùng biên segment 5065804. Segment 8092282 thuộc ngựa mẹ ở bên trái nên số pixel giao thấp giữa hai con."
+000000002157,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Các ly chân cao chồng hình. Segment 5721971 theo ly bầu phía trước và 5261667 theo ly cao phía sau. Hai cặp box 4/7 và 4/8 đều có mask riêng cho từng ly."
+000000002299,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Box 8 theo em ngồi trước với segment 5789784, box 11 theo em ở hàng sau với segment 13553358. Hai em có mask riêng dù box chồng lên nhau."
+000000011511,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Hai người ở nền trái che nhau trong vùng tối. Người mặc áo phản quang và người mặc áo nâu có hai mask riêng 1647127 và 526601."
+000000013923,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Ghế tựa đỏ phía trước có segment 4080824. Ghế gỗ tựa sáng phía sau có segment 9018818. Hai box chồng nhau ở vùng giữa."
+000000017959,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Segment 3616632 theo diều cá đỏ sọc trắng. Diều tam giác phía trên và đuôi dài có segment 7752551 riêng. Box hai diều chồng lên nhau."
+000000023781,category_swap,confirmed,"Phùng Danh Khoa xem ảnh. Vùng segment 5595317 là củ cà rốt màu cam. Box YOLO 4 ghi carrot đúng, panoptic ghi motorcycle nên sai lớp panoptic."
+000000023781,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Hai củ cà rốt ở box 1 và 3 chồng hình nhưng mỗi củ có một mask riêng, lần lượt là 10466288 và 6781662."
+000000023937,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Đàn bò phía sau hơi mờ. Mask 3421999 theo bò đen và 6852265 theo bò nâu phía sau. Hai box chồng ở phần thân."
