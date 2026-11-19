@@ -27,10 +27,7 @@ def _safe_path(root: Path, relative: str) -> Path | None:
     return candidate
 
 
-def prepare_v2_inputs(
-    delivery: Path, errors_file: Path, v2_dir: Path,
-    integrity_review_file: Path | None = None,
-) -> dict[str, int]:
+def prepare_v2_inputs(delivery: Path, errors_file: Path, v2_dir: Path) -> dict[str, int]:
     """Tạo bản nháp phần ảnh/nhãn của v2 và rework_queue.csv.
 
     `errors_file` phải là errors.json cuối đã được review. Thư mục v2 có sẵn
@@ -39,8 +36,6 @@ def prepare_v2_inputs(
     ở v2 để xử lý theo quy trình tương ứng.
     """
     delivery, errors_file, v2_dir = Path(delivery).resolve(), Path(errors_file).resolve(), Path(v2_dir).resolve()
-    if v2_dir == delivery or delivery in v2_dir.parents:
-        raise ValueError(f"v2 output must be outside delivery: {v2_dir}")
     # Bảo vệ bản v2 cũ: helper không xóa hoặc ghi đè đầu ra đã tồn tại.
     if v2_dir.exists():
         raise FileExistsError(f"refusing to overwrite existing v2 directory: {v2_dir}")
@@ -59,23 +54,6 @@ def prepare_v2_inputs(
         kind, target = str(error["type"]), str(error["target"])
         if kind in DETECTION_REWORK_TYPES and target in manifest:
             by_image[target].add(kind)
-
-    # Only queue wrong_hash images when review confirms corruption.
-    damaged_images: set[str] = set()
-    wrong_hash_images = {str(e["target"]) for e in errors if str(e["type"]) == "wrong_hash"}
-    if integrity_review_file is not None:
-        with Path(integrity_review_file).open(encoding="utf-8-sig", newline="") as handle:
-            for row in csv.DictReader(handle):
-                image = str(row.get("image", "")).strip()
-                verdict = str(row.get("verdict", "")).strip().lower()
-                if image not in manifest:
-                    raise ValueError(f"integrity review references unknown image: {image}")
-                if verdict not in {"damaged", "healthy"}:
-                    raise ValueError(f"{image}: verdict must be damaged or healthy")
-                if verdict == "damaged" and image in wrong_hash_images:
-                    damaged_images.add(image)
-    for image in damaged_images:
-        by_image[image].add("wrong_hash")
 
     # Tạo cấu trúc v2. Ảnh/nhãn có lỗi detection được giữ ngoài bản giao.
     (v2_dir / "images").mkdir(parents=True)
