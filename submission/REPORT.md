@@ -3,18 +3,22 @@
 ## 1. Số liệu luyện tập
 - F1 theo seed (rule / cross_check / overall): <<seed: ... / ... / ...>>
 - Lô sạch sau tích hợp: **10 ứng viên trên 8/50 ảnh**.
-- Seed luyện tập `3007` sau tích hợp: **55 ứng viên trên 37/250 ảnh**.
+- Seed luyện tập `3007` sau tích hợp: **54 ứng viên trên 37/250 ảnh**.
 
 ### Kết quả chạy chung
 
 Tích hợp `labelmatch.py` ở commit `06f2a9f` với `maskchecks.py` của Tiến ở
-commit `0470360`. Mỗi lô gọi `build_matches` một lần rồi truyền cùng dữ liệu
+commit `ec4a82f`. Mỗi lô gọi `build_matches` một lần rồi truyền cùng dữ liệu
 cho hai hàm `find_candidates`, theo thứ tự của `validator/validate.py`.
 
 | Lô | Ảnh đọc | Bất đồng lớp | Thiếu box | Box lệch | Gộp instance | Tổng ứng viên | Ảnh có ứng viên |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Sạch | 50 | 0 | 0 | 0 | 10 | 10 | 8 |
-| `3007` | 250 | 4 | 1 | 5 | 45 | 55 | 37 |
+| `3007` | 250 | 4 | 1 | 4 | 45 | 54 | 37 |
+
+Phiên bản `ec4a82f` bỏ qua cặp box–segment có giao pixel và IoU đều bằng 0.
+So với `0470360`, seed `3007` giảm một ứng viên box lệch, còn số ảnh cần xem
+giữ ở 37.
 
 Với ca mô phỏng một segment phủ hai box, hai module giữ ID `70001` và hai
 chỉ số box `[0, 1]`. `maskchecks.py` tạo một ứng viên `instance_merge`, với
