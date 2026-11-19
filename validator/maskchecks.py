@@ -144,9 +144,6 @@ def _image_candidates(match: dict[str, Any]) -> list[dict[str, Any]]:
             count, segment_share, box_share, bbox_iou = overlap_counts.get(
                 (bi, sid), (0, 0.0, 0.0, 0.0)
             )
-            # Skip pairs with no pixel or bbox intersection.
-            if count <= 0 and bbox_iou <= 0:
-                continue
             overlaps.append((bi, box, count, segment_share, box_share, bbox_iou))
             # Để nghi instance_merge, giao pixel phải đáng kể so với cả mask lẫn box.
             if (count >= MERGE_MIN_PIXELS
@@ -230,5 +227,4 @@ def find_candidates(matches: Iterable[dict[str, Any]] | dict[str, dict[str, Any]
     rows = matches.values() if isinstance(matches, dict) else matches
     for match in rows:
         findings.extend(_image_candidates(match))
-    return findings
-
+    return findings\n
