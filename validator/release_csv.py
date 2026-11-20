@@ -29,10 +29,13 @@ def generate_csv(release_dir, classes_file):
     if not images_dir.is_dir() or not labels_dir.is_dir():
         raise FileNotFoundError("Missing images/ or labels/ directory")
 
-    classes = [
-        name.strip()
-        for name in classes_file.read_text(encoding="utf-8").splitlines()
-    ]
+    classes = []
+    for index, line in enumerate(classes_file.read_text(encoding="utf-8").splitlines()):
+        parts = line.strip().split(maxsplit=1)
+        if len(parts) == 2 and parts[0] == str(index):
+            classes.append(parts[1])
+        else:
+            classes.append(line.strip())
 
     images = sorted(images_dir.glob("*.jpg"))
     labels = sorted(labels_dir.glob("*.txt"))

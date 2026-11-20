@@ -1,8 +1,19 @@
 # Dùng AI
 
+## Hỗ trợ xem ảnh seed 3007
+
+Nguyễn Công Quý hỏi Codex hỗ trợ review 8 ảnh. Codex phóng vùng cần xem và hiển thị box YOLO, mask panoptic theo dữ liệu giao. Quý đã tự xem và chốt các ca trong log. Kiểm tra kỹ thuật đã đối chiếu diện tích mask với dữ liệu ghép và thử chuyển ca, bật lớp phủ, phóng ảnh trên trình duyệt.
+
+Quý tiếp tục nhờ Codex đối chiếu 12 ứng viên thuộc 8 ảnh. Codex xem ảnh từ lô 3007 dựng lại, so box với mask mục tiêu và mask lân cận, rồi ghi nhận xét vào một CSV tham khảo. Với segment 3088945, góc ảnh tối và người bị che nên Codex để ngỏ kết luận. Quý kiểm tra từng ca bằng ảnh và lớp phủ trước khi ghi kết quả của mình vào log chính thức.
+
+Quý nhờ Codex chuẩn bị nhận xét cho 11 ứng viên vốn giao cho Phong. Codex đối chiếu ảnh, box YOLO và mask panoptic. Quý đã tự xem và xác nhận cả 11 ca; log ghi Quý là người xem. Hai ứng viên ở ảnh 000000025393 cần nhìn kỹ do ảnh tối.
+
 | # | Ai dùng | Công cụ | Prompt (tóm tắt) | AI sai ở đâu | Nhóm kiểm lại thế nào |
 |---|---|---|---|---|---|
 | 1 | Nguyễn Công Quý | Codex | Cân bằng việc cho 5 thành viên, điền TEAM.md và bắt đầu phần tích hợp validator của trưởng nhóm. Tên file mới viết liền, không dấu. | Qua các ca thử hiện tại, khung tích hợp chạy đúng. Kết quả trên lô thật cần kiểm lại sau khi ghép các module. | Đối chiếu giao diện với GUIDE.md. Chạy lệnh trợ giúp và dùng module mẫu trong thư mục tạm để kiểm hai đầu ra JSON, gộp lỗi trùng, báo thiếu module và chặn ghi vào delivery. |
 | 2 | Phùng Danh Khoa | Codex | Viết `build_matches` và `find_candidates`, ghép tên lớp giữa YOLO và panoptic, giữ nhiều box trên một segment cho Tiến. Chuẩn bị đo lô sạch và viết mục bảo mật. | Ngưỡng ban đầu do AI đề xuất và cần đo trên lô sạch. Các ca thử chỉ kiểm hành vi định trước. | Test với PNG tổng hợp có ID nhiều byte, hai box trên một segment, lệch lớp, thiếu box, crowd và nhãn thiếu/hỏng ID. Ứng viên vẫn cần thành viên mở ảnh và tự ghi kết luận. |
 | 3 | Phùng Danh Khoa | Codex | Tìm ví dụ khuôn mặt nhìn rõ cho `security.md`. Codex xem ba ảnh COCO công khai trong `r3007`: `000000009378`, `000000025386`, `000000019402`. | Ảnh `000000019402` có mặt bị áo khoác che một phần. Dùng `000000025386` vì thấy rõ hai mặt. | Đối chiếu mã ảnh với manifest, job và reviewer với `metadata.json` và `jobs.csv`. Việc này phục vụ mục bảo mật. Nhóm tự xem ảnh khi điền `review_log.csv`. |
 | 4 | Phùng Danh Khoa | Codex | Cập nhật số ứng viên và hỗ trợ đối chiếu 8 ảnh COCO công khai trong `r3007`: `000000001818`, `000000002157`, `000000002299`, `000000011511`, `000000013923`, `000000017959`, `000000023781`, `000000023937`. | Các nhận định ảnh của AI được dùng làm bản nháp. Hai con bò ở `000000023937` nằm xa và mờ nên được đánh dấu để kiểm lại. | Đếm lại hai lô bằng `maskchecks.py` ở `ec4a82f`. Phùng Danh Khoa đã tự xem 8 ảnh và xác nhận kết luận đối chiếu trước khi Codex ghi vào `review_log.csv`. |
+| 5 | Đinh Quốc Tiến | Codex | Đối chiếu box YOLO và mask panoptic trên 7 ảnh COCO của seed 3007. | Box chồng nhau dễ bị nhầm là mask gộp hai vật. Sau khi lọc danh sách mới, một dòng có segment ngoài phân công được bỏ. | Đối chiếu 10 dòng theo mã ảnh và segment. Tiến đã xác nhận hai dòng lỗi được gộp vào errors.json. |
+| 6 | Nguyễn Công Quý | Codex | Khôi phục dấu tiếng Việt trong CSV của Vinh và dựng lại trace.json từ ticket. | Các ký tự đã thành dấu hỏi không khôi phục nguyên văn được; hai ghi chú ở ảnh 000000008277 được diễn đạt lại. | Giữ nguyên 10 kết luận của Vinh và so mã ảnh, box, segment với danh sách ứng viên. Truy vết dùng guideline theo job và nhãn detection của lô v1. |
+| 7 | Nguyễn Công Quý | Codex | Ghép các PR validator, dựng và kiểm tra bản bàn giao. | Lần đầu H9 lỗi vì script thống kê giữ mã số trước tên lớp. | Cho script đọc đúng định dạng classes.txt và so hai CSV tạo lại với bản đã bàn giao. Chạy lại validator và bộ kiểm tra H1–H17. |
