@@ -1,0 +1,1392 @@
+{
+  "candidates": [
+    {
+      "type": "missing_box",
+      "image": "000000007511",
+      "segment_id": 3026996,
+      "segment_class": "person",
+      "segment_bbox": [
+        386,
+        241,
+        509,
+        472
+      ],
+      "segment_area": 14530
+    },
+    {
+      "type": "class_disagreement",
+      "image": "000000009483",
+      "segment_id": 9270375,
+      "segment_class": "tv",
+      "segment_bbox": [
+        459,
+        210,
+        579,
+        349
+      ],
+      "segment_area": 10757,
+      "box_index": 0,
+      "bbox_iou": 0.9929523487045446,
+      "intersection_pixels": 10757,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.6449040767386092,
+      "box_bbox": [
+        458.79967999999997,
+        210.25032000000002,
+        578.9897599999999,
+        349.49015999999995
+      ],
+      "box_class": "laptop"
+    },
+    {
+      "type": "class_disagreement",
+      "image": "000000019742",
+      "segment_id": 1257078,
+      "segment_class": "baseball bat",
+      "segment_bbox": [
+        172,
+        72,
+        339,
+        347
+      ],
+      "segment_area": 34436,
+      "box_index": 0,
+      "bbox_iou": 0.9946923276932674,
+      "intersection_pixels": 34436,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.7498312465977137,
+      "box_bbox": [
+        172.29000000000002,
+        72.38022,
+        338.7,
+        347.110148
+      ],
+      "box_class": "vase"
+    },
+    {
+      "type": "class_disagreement",
+      "image": "000000023272",
+      "segment_id": 7369075,
+      "segment_class": "car",
+      "segment_bbox": [
+        0,
+        0,
+        499,
+        371
+      ],
+      "segment_area": 127847,
+      "box_index": 1,
+      "bbox_iou": 0.9987029263385988,
+      "intersection_pixels": 127847,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.6905833229801922,
+      "box_bbox": [
+        0.0,
+        0.07987499999998621,
+        499.46000000000004,
+        371.059875
+      ],
+      "box_class": "bus"
+    },
+    {
+      "type": "class_disagreement",
+      "image": "000000023781",
+      "segment_id": 5595317,
+      "segment_class": "motorcycle",
+      "segment_bbox": [
+        380,
+        363,
+        482,
+        422
+      ],
+      "segment_area": 3257,
+      "box_index": 4,
+      "bbox_iou": 0.9899461404845507,
+      "intersection_pixels": 3257,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.5412097042206713,
+      "box_bbox": [
+        379.78015999999997,
+        362.6999915,
+        482.26016000000004,
+        421.9799745
+      ],
+      "box_class": "carrot"
+    },
+    {
+      "image": "000000000776",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        2
+      ],
+      "segment_ids": [
+        1063025
+      ],
+      "evidence": {
+        "segment_area": 84625,
+        "box_pixel_intersections": [
+          84625,
+          36209
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4279
+        ],
+        "box_share_per_box": [
+          0.752,
+          0.2001
+        ],
+        "box_iou": 0.2643
+      }
+    },
+    {
+      "image": "000000000885",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        1
+      ],
+      "segment_ids": [
+        6775400
+      ],
+      "evidence": {
+        "segment_area": 10343,
+        "box_pixel_intersections": [
+          10343,
+          4523
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4373
+        ],
+        "box_share_per_box": [
+          0.3552,
+          0.239
+        ],
+        "box_iou": 0.1922
+      }
+    },
+    {
+      "image": "000000001000",
+      "type": "instance_merge",
+      "box_indices": [
+        8,
+        9
+      ],
+      "segment_ids": [
+        3421582
+      ],
+      "evidence": {
+        "segment_area": 18003,
+        "box_pixel_intersections": [
+          18003,
+          7760
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.431
+        ],
+        "box_share_per_box": [
+          0.5777,
+          0.2764
+        ],
+        "box_iou": 0.3682
+      }
+    },
+    {
+      "image": "000000001353",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        3
+      ],
+      "segment_ids": [
+        3095374
+      ],
+      "evidence": {
+        "segment_area": 11518,
+        "box_pixel_intersections": [
+          3415,
+          11518
+        ],
+        "segment_share_per_box": [
+          0.2965,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.398,
+          0.4864
+        ],
+        "box_iou": 0.1601
+      }
+    },
+    {
+      "image": "000000001818",
+      "type": "bbox_drift",
+      "box_indices": [
+        0
+      ],
+      "segment_ids": [
+        8092282
+      ],
+      "evidence": {
+        "segment_area": 120106,
+        "pixels_inside_box": 60273,
+        "segment_coverage": 0.5018
+      }
+    },
+    {
+      "image": "000000002153",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        1
+      ],
+      "segment_ids": [
+        5784894
+      ],
+      "evidence": {
+        "segment_area": 10858,
+        "box_pixel_intersections": [
+          10858,
+          4839
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4457
+        ],
+        "box_share_per_box": [
+          0.349,
+          0.3962
+        ],
+        "box_iou": 0.2299
+      }
+    },
+    {
+      "image": "000000002157",
+      "type": "instance_merge",
+      "box_indices": [
+        4,
+        7
+      ],
+      "segment_ids": [
+        5721971
+      ],
+      "evidence": {
+        "segment_area": 4036,
+        "box_pixel_intersections": [
+          2068,
+          4036
+        ],
+        "segment_share_per_box": [
+          0.5124,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2349,
+          0.5263
+        ],
+        "box_iou": 0.2996
+      }
+    },
+    {
+      "image": "000000002157",
+      "type": "instance_merge",
+      "box_indices": [
+        4,
+        8
+      ],
+      "segment_ids": [
+        5261667
+      ],
+      "evidence": {
+        "segment_area": 3694,
+        "box_pixel_intersections": [
+          3694,
+          1556
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4212
+        ],
+        "box_share_per_box": [
+          0.4196,
+          0.3813
+        ],
+        "box_iou": 0.1643
+      }
+    },
+    {
+      "image": "000000002299",
+      "type": "instance_merge",
+      "box_indices": [
+        8,
+        11
+      ],
+      "segment_ids": [
+        13553358
+      ],
+      "evidence": {
+        "segment_area": 3155,
+        "box_pixel_intersections": [
+          1205,
+          3155
+        ],
+        "segment_share_per_box": [
+          0.3819,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2013,
+          0.4086
+        ],
+        "box_iou": 0.3374
+      }
+    },
+    {
+      "image": "000000002299",
+      "type": "instance_merge",
+      "box_indices": [
+        8,
+        11
+      ],
+      "segment_ids": [
+        5789784
+      ],
+      "evidence": {
+        "segment_area": 4006,
+        "box_pixel_intersections": [
+          4006,
+          1973
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4925
+        ],
+        "box_share_per_box": [
+          0.6693,
+          0.2555
+        ],
+        "box_iou": 0.3374
+      }
+    },
+    {
+      "image": "000000002685",
+      "type": "instance_merge",
+      "box_indices": [
+        7,
+        8
+      ],
+      "segment_ids": [
+        3424850
+      ],
+      "evidence": {
+        "segment_area": 35969,
+        "box_pixel_intersections": [
+          35969,
+          14392
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4001
+        ],
+        "box_share_per_box": [
+          0.29,
+          0.3376
+        ],
+        "box_iou": 0.2579
+      }
+    },
+    {
+      "image": "000000002685",
+      "type": "instance_merge",
+      "box_indices": [
+        8,
+        18
+      ],
+      "segment_ids": [
+        8817049
+      ],
+      "evidence": {
+        "segment_area": 46851,
+        "box_pixel_intersections": [
+          12265,
+          46851
+        ],
+        "segment_share_per_box": [
+          0.2618,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2877,
+          0.3189
+        ],
+        "box_iou": 0.2396
+      }
+    },
+    {
+      "image": "000000002685",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        2
+      ],
+      "segment_ids": [
+        2369601
+      ],
+      "evidence": {
+        "segment_area": 1140,
+        "box_pixel_intersections": [
+          1140,
+          522
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4579
+        ],
+        "box_share_per_box": [
+          0.3024,
+          0.2803
+        ],
+        "box_iou": 0.3697
+      }
+    },
+    {
+      "image": "000000004134",
+      "type": "instance_merge",
+      "box_indices": [
+        6,
+        21
+      ],
+      "segment_ids": [
+        460811
+      ],
+      "evidence": {
+        "segment_area": 11843,
+        "box_pixel_intersections": [
+          4647,
+          11843
+        ],
+        "segment_share_per_box": [
+          0.3924,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.3645,
+          0.4839
+        ],
+        "box_iou": 0.3713
+      }
+    },
+    {
+      "image": "000000005001",
+      "type": "instance_merge",
+      "box_indices": [
+        7,
+        15
+      ],
+      "segment_ids": [
+        10722729
+      ],
+      "evidence": {
+        "segment_area": 7921,
+        "box_pixel_intersections": [
+          7921,
+          3607
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4554
+        ],
+        "box_share_per_box": [
+          0.6309,
+          0.269
+        ],
+        "box_iou": 0.2658
+      }
+    },
+    {
+      "image": "000000005001",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        1184021
+      ],
+      "evidence": {
+        "segment_area": 18535,
+        "box_pixel_intersections": [
+          6097,
+          18535
+        ],
+        "segment_share_per_box": [
+          0.3289,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2276,
+          0.4583
+        ],
+        "box_iou": 0.3195
+      }
+    },
+    {
+      "image": "000000005001",
+      "type": "instance_merge",
+      "box_indices": [
+        9,
+        15
+      ],
+      "segment_ids": [
+        5984609
+      ],
+      "evidence": {
+        "segment_area": 10136,
+        "box_pixel_intersections": [
+          10136,
+          5170
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5101
+        ],
+        "box_share_per_box": [
+          0.4235,
+          0.3855
+        ],
+        "box_iou": 0.3919
+      }
+    },
+    {
+      "image": "000000007511",
+      "type": "bbox_drift",
+      "box_indices": [
+        1
+      ],
+      "segment_ids": [
+        3026996
+      ],
+      "evidence": {
+        "segment_area": 14530,
+        "pixels_inside_box": 0,
+        "segment_coverage": 0.0
+      }
+    },
+    {
+      "image": "000000007795",
+      "type": "bbox_drift",
+      "box_indices": [
+        0
+      ],
+      "segment_ids": [
+        7435899
+      ],
+      "evidence": {
+        "segment_area": 70150,
+        "pixels_inside_box": 9413,
+        "segment_coverage": 0.1342
+      }
+    },
+    {
+      "image": "000000008277",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        12
+      ],
+      "segment_ids": [
+        674121
+      ],
+      "evidence": {
+        "segment_area": 4890,
+        "box_pixel_intersections": [
+          4890,
+          2364
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4834
+        ],
+        "box_share_per_box": [
+          0.7087,
+          0.3359
+        ],
+        "box_iou": 0.2836
+      }
+    },
+    {
+      "image": "000000008277",
+      "type": "instance_merge",
+      "box_indices": [
+        6,
+        10
+      ],
+      "segment_ids": [
+        742223
+      ],
+      "evidence": {
+        "segment_area": 1635,
+        "box_pixel_intersections": [
+          1635,
+          1023
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.6257
+        ],
+        "box_share_per_box": [
+          0.5933,
+          0.2324
+        ],
+        "box_iou": 0.2537
+      }
+    },
+    {
+      "image": "000000010707",
+      "type": "instance_merge",
+      "box_indices": [
+        7,
+        10
+      ],
+      "segment_ids": [
+        4549770
+      ],
+      "evidence": {
+        "segment_area": 1151,
+        "box_pixel_intersections": [
+          1151,
+          297
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.258
+        ],
+        "box_share_per_box": [
+          0.7225,
+          0.4097
+        ],
+        "box_iou": 0.1669
+      }
+    },
+    {
+      "image": "000000011511",
+      "type": "instance_merge",
+      "box_indices": [
+        2,
+        9
+      ],
+      "segment_ids": [
+        1647127
+      ],
+      "evidence": {
+        "segment_area": 4074,
+        "box_pixel_intersections": [
+          4074,
+          2074
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5091
+        ],
+        "box_share_per_box": [
+          0.5471,
+          0.2065
+        ],
+        "box_iou": 0.2811
+      }
+    },
+    {
+      "image": "000000012670",
+      "type": "instance_merge",
+      "box_indices": [
+        5,
+        6
+      ],
+      "segment_ids": [
+        6972783
+      ],
+      "evidence": {
+        "segment_area": 10132,
+        "box_pixel_intersections": [
+          10132,
+          6183
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.6102
+        ],
+        "box_share_per_box": [
+          0.7054,
+          0.2868
+        ],
+        "box_iou": 0.261
+      }
+    },
+    {
+      "image": "000000013291",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        13419440
+      ],
+      "evidence": {
+        "segment_area": 2394,
+        "box_pixel_intersections": [
+          1507,
+          887
+        ],
+        "segment_share_per_box": [
+          0.6295,
+          0.3705
+        ],
+        "box_share_per_box": [
+          0.78,
+          0.7466
+        ],
+        "box_iou": 0.0
+      }
+    },
+    {
+      "image": "000000013659",
+      "type": "bbox_drift",
+      "box_indices": [
+        11
+      ],
+      "segment_ids": [
+        8351070
+      ],
+      "evidence": {
+        "segment_area": 15003,
+        "pixels_inside_box": 6729,
+        "segment_coverage": 0.4485
+      }
+    },
+    {
+      "image": "000000013729",
+      "type": "instance_merge",
+      "box_indices": [
+        6,
+        7
+      ],
+      "segment_ids": [
+        11712202
+      ],
+      "evidence": {
+        "segment_area": 28082,
+        "box_pixel_intersections": [
+          28082,
+          7945
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.2829
+        ],
+        "box_share_per_box": [
+          0.3986,
+          0.3975
+        ],
+        "box_iou": 0.2675
+      }
+    },
+    {
+      "image": "000000013923",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        5
+      ],
+      "segment_ids": [
+        4080824
+      ],
+      "evidence": {
+        "segment_area": 7015,
+        "box_pixel_intersections": [
+          5290,
+          7015
+        ],
+        "segment_share_per_box": [
+          0.7541,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.3142,
+          0.6067
+        ],
+        "box_iou": 0.3693
+      }
+    },
+    {
+      "image": "000000015254",
+      "type": "instance_merge",
+      "box_indices": [
+        5,
+        7
+      ],
+      "segment_ids": [
+        1199075
+      ],
+      "evidence": {
+        "segment_area": 8538,
+        "box_pixel_intersections": [
+          2169,
+          8538
+        ],
+        "segment_share_per_box": [
+          0.254,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.3423,
+          0.3795
+        ],
+        "box_iou": 0.2838
+      }
+    },
+    {
+      "image": "000000015335",
+      "type": "instance_merge",
+      "box_indices": [
+        6,
+        8
+      ],
+      "segment_ids": [
+        3088945
+      ],
+      "evidence": {
+        "segment_area": 2984,
+        "box_pixel_intersections": [
+          795,
+          2984
+        ],
+        "segment_share_per_box": [
+          0.2664,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.3357,
+          0.2765
+        ],
+        "box_iou": 0.2198
+      }
+    },
+    {
+      "image": "000000015517",
+      "type": "instance_merge",
+      "box_indices": [
+        5,
+        10
+      ],
+      "segment_ids": [
+        8613732
+      ],
+      "evidence": {
+        "segment_area": 1055,
+        "box_pixel_intersections": [
+          1055,
+          498
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.472
+        ],
+        "box_share_per_box": [
+          0.4237,
+          0.3242
+        ],
+        "box_iou": 0.1688
+      }
+    },
+    {
+      "image": "000000015517",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        5
+      ],
+      "segment_ids": [
+        6443848
+      ],
+      "evidence": {
+        "segment_area": 1984,
+        "box_pixel_intersections": [
+          1984,
+          1027
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5176
+        ],
+        "box_share_per_box": [
+          0.7911,
+          0.4124
+        ],
+        "box_iou": 0.3013
+      }
+    },
+    {
+      "image": "000000016451",
+      "type": "instance_merge",
+      "box_indices": [
+        4,
+        5
+      ],
+      "segment_ids": [
+        4141907
+      ],
+      "evidence": {
+        "segment_area": 3332,
+        "box_pixel_intersections": [
+          3332,
+          1847
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5543
+        ],
+        "box_share_per_box": [
+          0.8143,
+          0.2757
+        ],
+        "box_iou": 0.246
+      }
+    },
+    {
+      "image": "000000017182",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        2
+      ],
+      "segment_ids": [
+        3944728
+      ],
+      "evidence": {
+        "segment_area": 3804,
+        "box_pixel_intersections": [
+          3804,
+          1481
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3893
+        ],
+        "box_share_per_box": [
+          0.8745,
+          0.5796
+        ],
+        "box_iou": 0.311
+      }
+    },
+    {
+      "image": "000000017959",
+      "type": "instance_merge",
+      "box_indices": [
+        9,
+        11
+      ],
+      "segment_ids": [
+        3616632
+      ],
+      "evidence": {
+        "segment_area": 6575,
+        "box_pixel_intersections": [
+          4712,
+          6575
+        ],
+        "segment_share_per_box": [
+          0.7167,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2039,
+          0.4903
+        ],
+        "box_iou": 0.2702
+      }
+    },
+    {
+      "image": "000000018380",
+      "type": "instance_merge",
+      "box_indices": [
+        19,
+        22
+      ],
+      "segment_ids": [
+        5533297
+      ],
+      "evidence": {
+        "segment_area": 4000,
+        "box_pixel_intersections": [
+          4000,
+          2221
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5553
+        ],
+        "box_share_per_box": [
+          0.5752,
+          0.2056
+        ],
+        "box_iou": 0.2719
+      }
+    },
+    {
+      "image": "000000018380",
+      "type": "instance_merge",
+      "box_indices": [
+        21,
+        24
+      ],
+      "segment_ids": [
+        2436446
+      ],
+      "evidence": {
+        "segment_area": 2274,
+        "box_pixel_intersections": [
+          2274,
+          994
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4371
+        ],
+        "box_share_per_box": [
+          0.5264,
+          0.2096
+        ],
+        "box_iou": 0.2741
+      }
+    },
+    {
+      "image": "000000018380",
+      "type": "instance_merge",
+      "box_indices": [
+        15,
+        16
+      ],
+      "segment_ids": [
+        5138839
+      ],
+      "evidence": {
+        "segment_area": 23579,
+        "box_pixel_intersections": [
+          23579,
+          7377
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3129
+        ],
+        "box_share_per_box": [
+          0.731,
+          0.2623
+        ],
+        "box_iou": 0.3279
+      }
+    },
+    {
+      "image": "000000018380",
+      "type": "instance_merge",
+      "box_indices": [
+        15,
+        16
+      ],
+      "segment_ids": [
+        5333101
+      ],
+      "evidence": {
+        "segment_area": 16144,
+        "box_pixel_intersections": [
+          7150,
+          16144
+        ],
+        "segment_share_per_box": [
+          0.4429,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2217,
+          0.5741
+        ],
+        "box_iou": 0.3279
+      }
+    },
+    {
+      "image": "000000019109",
+      "type": "instance_merge",
+      "box_indices": [
+        20,
+        21
+      ],
+      "segment_ids": [
+        5918787
+      ],
+      "evidence": {
+        "segment_area": 1904,
+        "box_pixel_intersections": [
+          1904,
+          544
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.2857
+        ],
+        "box_share_per_box": [
+          0.479,
+          0.4224
+        ],
+        "box_iou": 0.2126
+      }
+    },
+    {
+      "image": "000000019109",
+      "type": "instance_merge",
+      "box_indices": [
+        4,
+        23
+      ],
+      "segment_ids": [
+        7167830
+      ],
+      "evidence": {
+        "segment_area": 3132,
+        "box_pixel_intersections": [
+          3132,
+          1186
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3787
+        ],
+        "box_share_per_box": [
+          0.5118,
+          0.2102
+        ],
+        "box_iou": 0.3023
+      }
+    },
+    {
+      "image": "000000019109",
+      "type": "instance_merge",
+      "box_indices": [
+        6,
+        26
+      ],
+      "segment_ids": [
+        5523519
+      ],
+      "evidence": {
+        "segment_area": 3145,
+        "box_pixel_intersections": [
+          1190,
+          3145
+        ],
+        "segment_share_per_box": [
+          0.3784,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2333,
+          0.5286
+        ],
+        "box_iou": 0.3396
+      }
+    },
+    {
+      "image": "000000019109",
+      "type": "instance_merge",
+      "box_indices": [
+        6,
+        7
+      ],
+      "segment_ids": [
+        5589311
+      ],
+      "evidence": {
+        "segment_area": 4308,
+        "box_pixel_intersections": [
+          1534,
+          4308
+        ],
+        "segment_share_per_box": [
+          0.3561,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.3008,
+          0.5464
+        ],
+        "box_iou": 0.2515
+      }
+    },
+    {
+      "image": "000000019402",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        1
+      ],
+      "segment_ids": [
+        4419450
+      ],
+      "evidence": {
+        "segment_area": 116801,
+        "box_pixel_intersections": [
+          36535,
+          116801
+        ],
+        "segment_share_per_box": [
+          0.3128,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2045,
+          0.6788
+        ],
+        "box_iou": 0.2073
+      }
+    },
+    {
+      "image": "000000023781",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        3
+      ],
+      "segment_ids": [
+        6781662
+      ],
+      "evidence": {
+        "segment_area": 4332,
+        "box_pixel_intersections": [
+          1385,
+          4332
+        ],
+        "segment_share_per_box": [
+          0.3197,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2007,
+          0.6828
+        ],
+        "box_iou": 0.1777
+      }
+    },
+    {
+      "image": "000000023937",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        3
+      ],
+      "segment_ids": [
+        3421999
+      ],
+      "evidence": {
+        "segment_area": 2330,
+        "box_pixel_intersections": [
+          2330,
+          1261
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5412
+        ],
+        "box_share_per_box": [
+          0.4857,
+          0.3036
+        ],
+        "box_iou": 0.39
+      }
+    },
+    {
+      "image": "000000024021",
+      "type": "instance_merge",
+      "box_indices": [
+        8,
+        9
+      ],
+      "segment_ids": [
+        6118749
+      ],
+      "evidence": {
+        "segment_area": 1811,
+        "box_pixel_intersections": [
+          605,
+          1811
+        ],
+        "segment_share_per_box": [
+          0.3341,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2436,
+          0.4114
+        ],
+        "box_iou": 0.3052
+      }
+    },
+    {
+      "image": "000000025393",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        1844790
+      ],
+      "evidence": {
+        "segment_area": 1094,
+        "box_pixel_intersections": [
+          1094,
+          438
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4004
+        ],
+        "box_share_per_box": [
+          0.6795,
+          0.2086
+        ],
+        "box_iou": 0.3225
+      }
+    },
+    {
+      "image": "000000025393",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        460809
+      ],
+      "evidence": {
+        "segment_area": 1292,
+        "box_pixel_intersections": [
+          434,
+          1292
+        ],
+        "segment_share_per_box": [
+          0.3359,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2696,
+          0.6152
+        ],
+        "box_iou": 0.3225
+      }
+    }
+  ]
+}

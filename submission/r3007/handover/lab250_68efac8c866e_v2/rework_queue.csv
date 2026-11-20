@@ -1,0 +1,6 @@
+image,type,annotator,reviewer,action
+000000004134,bbox_out_of_bounds,A02,Q01,relabel_detection
+000000007511,missing_box,A05,Q03,relabel_detection
+000000009483,class_swap,A04,Q01,relabel_detection
+000000013546,invalid_class,A04,Q02,relabel_detection
+000000023272,class_swap,A05,Q01,relabel_detection

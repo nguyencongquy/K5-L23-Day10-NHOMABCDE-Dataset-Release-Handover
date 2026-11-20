@@ -1,0 +1,53 @@
+image,type,verdict,note
+000000019742,category_swap,confirmed,"Nguyễn Công Quý xem ảnh. Segment 1257078. Vùng mask phủ bình thủy tinh có miệng và chân đế. YOLO ghi vase, panoptic ghi baseball bat."
+000000001000,instance_merge,rejected,Nguyễn Công Quý xem ảnh. Segment 3421582. Mask theo cậu bé áo đỏ ở tiền cảnh. Box còn lại chồng lên cậu bé vì người đội mũ sáng đứng sát phía sau.
+000000004134,instance_merge,rejected,Nguyễn Công Quý xem ảnh. Segment 460811. Mask theo người mặc đồ tối ở mép phải. Người áo hoa vàng phía sau có vùng mask riêng dù hai box chồng nhau.
+000000013291,instance_merge,confirmed,"Nguyễn Công Quý xem ảnh. Segment 13419440. Cùng một segment cam phủ hai đĩa frisbee logo xanh tách rời, một đĩa ở tay người áo xanh bên trái và một đĩa ở bên phải. YOLO có hai box riêng."
+000000015335,instance_merge,rejected,"Nguyễn Công Quý xem ảnh. Segment 3088945. Hai box chồng nhau, không thấy một mask phủ cả hai người."
+000000015517,instance_merge,rejected,Nguyễn Công Quý xem ảnh. Segment 8613732. Mask cam theo xe buýt thân dài ở giữa. Xe buýt ở góc trên phải có mask riêng. Hai box giao vì các xe đỗ sát nhau.
+000000015517,instance_merge,rejected,"Nguyễn Công Quý xem ảnh. Segment 6443848. Mask cam theo xe buýt dài ở tiền cảnh. Xe màu trắng xanh phía sau có mask riêng, dù box xe sau chồng lên thân xe trước."
+000000019109,instance_merge,rejected,"Nguyễn Công Quý xem ảnh. Segment 5918787. Mask cam bám theo một xe tay ga, từ kính chắn gió tới bánh trước. Xe phía sau bên phải có mask riêng."
+000000019109,instance_merge,rejected,"Nguyễn Công Quý xem ảnh. Segment 7167830. Mask cam theo xe tay ga ở giữa, gồm kính chắn gió và bánh trước. Xe xám bên trái có mask riêng."
+000000019109,instance_merge,rejected,"Nguyễn Công Quý xem ảnh. Segment 5523519. Mask cam theo xe tay ga phía phải, gồm đầu xe và bánh trước. Bánh và thân xe kế bên nằm trong mask riêng."
+000000019109,instance_merge,rejected,"Nguyễn Công Quý xem ảnh. Segment 5589311. Mask cam theo xe tay ga có kính cao ở giữa. Xe bên phải có mask riêng, dù hai box giao nhau."
+000000024021,instance_merge,rejected,Nguyễn Công Quý xem ảnh. Segment 6118749. Mask cam theo người đàn ông ở giữa ảnh. Cậu bé phía trước và người đứng sau bên phải có mask riêng.
+000000001818,bbox_drift,rejected,Phùng Danh Khoa xem ảnh. Box 0 bao ngựa vằn con và trùng biên segment 5065804. Segment 8092282 thuộc ngựa mẹ ở bên trái nên số pixel giao thấp giữa hai con.
+000000002157,instance_merge,rejected,Phùng Danh Khoa xem ảnh. Các ly chân cao chồng hình. Segment 5721971 theo ly bầu phía trước và 5261667 theo ly cao phía sau. Hai cặp box 4/7 và 4/8 đều có mask riêng cho từng ly.
+000000002299,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Box 8 theo em ngồi trước với segment 5789784, box 11 theo em ở hàng sau với segment 13553358. Hai em có mask riêng dù box chồng lên nhau."
+000000011511,instance_merge,rejected,Phùng Danh Khoa xem ảnh. Hai người ở nền trái che nhau trong vùng tối. Người mặc áo phản quang và người mặc áo nâu có hai mask riêng 1647127 và 526601.
+000000013923,instance_merge,rejected,Phùng Danh Khoa xem ảnh. Ghế tựa đỏ phía trước có segment 4080824. Ghế gỗ tựa sáng phía sau có segment 9018818. Hai box chồng nhau ở vùng giữa.
+000000017959,instance_merge,rejected,Phùng Danh Khoa xem ảnh. Segment 3616632 theo diều cá đỏ sọc trắng. Diều tam giác phía trên và đuôi dài có segment 7752551 riêng. Box hai diều chồng lên nhau.
+000000023781,category_swap,confirmed,"Phùng Danh Khoa xem ảnh. Vùng segment 5595317 là củ cà rốt màu cam. Box YOLO 4 ghi carrot đúng, panoptic ghi motorcycle nên sai lớp panoptic."
+000000023781,instance_merge,rejected,"Phùng Danh Khoa xem ảnh. Hai củ cà rốt ở box 1 và 3 chồng hình nhưng mỗi củ có một mask riêng, lần lượt là 10466288 và 6781662."
+000000023937,instance_merge,rejected,Phùng Danh Khoa xem ảnh. Đàn bò phía sau hơi mờ. Mask 3421999 theo bò đen và 6852265 theo bò nâu phía sau. Hai box chồng ở phần thân.
+000000009483,class_swap,confirmed,Đinh Quốc Tiến: segment_id=9270375. Ứng viên class_disagreement: box ghi laptop nhưng mask ghi tv. Ảnh cho thấy màn hình máy tính để bàn; kết luận: class_swap.
+000000000885,instance_merge,rejected,Đinh Quốc Tiến: segment_id=6775400. Mask phủ người chơi đang cúi; box còn lại thuộc người chơi đứng phía sau. Hai box chồng nhau nhưng mask không gộp hai người.
+000000002153,instance_merge,rejected,Đinh Quốc Tiến: segment_id=5784894. Mask phủ trọng tài ở tiền cảnh; box còn lại thuộc cầu thủ phía sau. Đây là hai người riêng biệt.
+000000012670,instance_merge,rejected,Đinh Quốc Tiến: segment_id=6972783. Mask khớp người mặc áo xám cạnh gấu bông; box còn lại nằm trên người mặc áo đỏ phía sau.
+000000015254,instance_merge,confirmed,"Đinh Quốc Tiến: segment_id=1199075. Mask phủ hai củ cà rốt sát nhau; box rộng bao cả cụm, box còn lại nằm trên một củ. Kết luận: instance_merge."
+000000018380,instance_merge,rejected,Đinh Quốc Tiến: segment_id=5533297. Mask phủ bé gái; box còn lại thuộc người đàn ông đang bế bé.
+000000018380,instance_merge,rejected,Đinh Quốc Tiến: segment_id=2436446. Mask phủ người đàn ông phía sau; box còn lại nằm trên người ngồi phía trước.
+000000018380,instance_merge,rejected,Đinh Quốc Tiến: segment_id=5138839. Mask khớp người phụ nữ lớn tuổi bên trái; box kia thuộc người phụ nữ kế bên.
+000000018380,instance_merge,rejected,Đinh Quốc Tiến: segment_id=5333101. Mask khớp người phụ nữ áo xanh nhạt; box kia thuộc người phụ nữ lớn tuổi sát bên.
+000000019402,instance_merge,rejected,Đinh Quốc Tiến: segment_id=4419450. Mask phủ người bên trái; box còn lại thuộc người bên phải. Hai box chồng nhau nhưng là hai người riêng biệt.
+000000000776,instance_merge,rejected,"Trần Đình Quang Vinh. segment_id=1063025; box_indices=1|2. Ghi chú phục hồi dấu theo ngữ cảnh. Nhiều gấu bông xếp sát nhau. Mask đỏ chỉ tô con gấu cam ở phía trước, không tô chung con gấu nâu nhạt phía trên. Hai khung chồng nhau vì các con gấu đặt sát nhau."
+000000001353,instance_merge,rejected,"Trần Đình Quang Vinh. segment_id=3095374; box_indices=1|3. Ghi chú phục hồi dấu theo ngữ cảnh. Các em nhỏ ngồi sát nhau trên xe trò chơi màu đỏ. Mask đỏ bám theo em mặc áo đỏ phía trước, tách khỏi em tóc xoăn phía sau."
+000000005001,instance_merge,rejected,"Trần Đình Quang Vinh. segment_id=10722729; box_indices=7|15. Ghi chú phục hồi dấu theo ngữ cảnh. Mask đỏ thuộc người đàn ông đội mũ len trong sự kiện ngoài trời. Khung còn lại vắt qua người đứng bên cạnh, nhưng mask không gộp cả hai."
+000000005001,instance_merge,rejected,"Trần Đình Quang Vinh. segment_id=1184021; box_indices=3|4. Ghi chú phục hồi dấu theo ngữ cảnh. Mask đỏ thuộc người đàn ông mặc vest đen ở góc trái. Đứa nhỏ đứng phía trước là đối tượng riêng, không bị tô chung vào mask."
+000000005001,instance_merge,rejected,Trần Đình Quang Vinh. segment_id=5984609; box_indices=9|15. Ghi chú phục hồi dấu theo ngữ cảnh. Mask đỏ thuộc người đàn ông đầu hói mặc áo đỏ ở giữa. Người phụ nữ tóc đen phía sau là đối tượng riêng.
+000000008277,instance_merge,rejected,"Trần Đình Quang Vinh. segment_id=674121; box_indices=3|12. Ghi chú phục hồi, diễn đạt lại. Trong ảnh khay thức ăn có nước sốt màu xanh, mask đỏ chỉ đánh dấu một phần ở giữa khay. Khung thứ hai giao với vùng này, nhưng chưa thấy hai miếng rau riêng biệt bị gộp."
+000000008277,instance_merge,rejected,"Trần Đình Quang Vinh. segment_id=742223; box_indices=6|10. Ghi chú phục hồi, diễn đạt lại. Mask đỏ nằm trên một phần miếng rau gần giữa khay. Hai khung giao ở mép vùng rau, nhưng chưa thấy mask bao cả hai phần riêng biệt."
+000000010707,instance_merge,rejected,Trần Đình Quang Vinh. segment_id=4549770; box_indices=7|10. Ghi chú phục hồi dấu theo ngữ cảnh. Mask đỏ chỉ tô một lon ở phía trái. Lon có nhãn chữ màu xanh trắng đứng kế bên không nằm chung trong mask. Hai khung chồng nhau do các lon đặt sát.
+000000013729,instance_merge,rejected,Trần Đình Quang Vinh. segment_id=11712202; box_indices=6|7. Ghi chú phục hồi dấu theo ngữ cảnh. Mask đỏ chỉ tô người phụ nữ mặc váy hồng đang quay lưng. Người đàn ông mặc áo thun trắng đứng phía sau không nằm chung trong mask.
+000000017182,instance_merge,rejected,Trần Đình Quang Vinh. segment_id=3944728; box_indices=1|2. Ghi chú phục hồi dấu theo ngữ cảnh. Mask đỏ chỉ tô một cuốn sách bìa đỏ ở phía trái. Cuốn sách gáy đỏ và xanh đứng sát bên là đối tượng riêng. Hai khung chồng ở mép sách.
+000000007511,missing_box,confirmed,"Nguyễn Công Quý xem ảnh và xác nhận. Segment 3026996. Người áo đen ở tiền cảnh có mask rõ từ đầu đến chân. Các box person trong nhãn đều nhỏ và nằm ở xa, không có box cho người này."
+000000023272,class_swap,confirmed,"Nguyễn Công Quý xem ảnh và xác nhận. Segment 7369075. Box 1 phủ ô tô Mercedes có mèo ngồi trên nắp ca-pô. YOLO ghi bus nhưng mask ghi car, phù hợp với hình."
+000000002685,instance_merge,rejected,Nguyễn Công Quý xem ảnh và xác nhận. Segment 3424850. Mask theo người phụ nữ mặc áo đen và tạp dề. Box 8 chồng lên một phần người này nhưng người phía sau có mask riêng.
+000000002685,instance_merge,rejected,"Nguyễn Công Quý xem ảnh và xác nhận. Segment 8817049. Mask theo người đội mũ trắng, áo nhạt và quần sọc ở tiền cảnh. Những người phía sau có mask riêng."
+000000002685,instance_merge,rejected,Nguyễn Công Quý xem ảnh và xác nhận. Segment 2369601. Mask theo một chai cổ đỏ. Chai sát bên có mask riêng; hai box giao nhau do chai đặt gần và ảnh nghiêng.
+000000007511,bbox_drift,rejected,"Nguyễn Công Quý xem ảnh và xác nhận. Segment 3026996. Box 1 rất nhỏ và nằm ở vùng người phía xa. Segment theo người áo đen ở tiền cảnh; người áo đen thiếu box, đã ghi ở ca 1."
+000000007795,bbox_drift,rejected,"Nguyễn Công Quý xem ảnh và xác nhận. Segment 7435899. Box 0 bám giường phía sau sát cửa sổ, có mask riêng. Segment mục tiêu phủ giường tiền cảnh; box 0 thuộc giường khác."
+000000013659,bbox_drift,rejected,"Nguyễn Công Quý xem ảnh và xác nhận. Segment 8351070. Box 11 bao laptop phía trước đúng vị trí. Mask mang nhãn laptop phủ cả laptop và một vùng trên đầu người, kéo giảm tỷ lệ phủ. Ảnh đã có lỗi luật thing_overlap."
+000000016451,instance_merge,rejected,"Nguyễn Công Quý xem ảnh và xác nhận. Segment 4141907. Mask theo túi nâu ở bên trái, túi sát bên phải có mask riêng. Hai box giao nhau nhưng mask cam chỉ phủ một túi."
+000000025393,instance_merge,rejected,Nguyễn Công Quý xem ảnh và xác nhận. Segment 1844790. Mask cam phủ phần đầu xe sáng có biển số; mask của xe cạnh bên tách riêng dù hai box chồng. Ảnh tối.
+000000025393,instance_merge,rejected,Nguyễn Công Quý xem ảnh và xác nhận. Segment 460809. Mask mục tiêu nằm bên phải vùng đầu xe sáng. Phần đầu xe có biển số mang segment 1844790 riêng. Ảnh tối.
