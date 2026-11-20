@@ -1,3 +1,12 @@
 image,type,verdict,note
-000000999007,class_swap,confirmed,"mở ảnh: xe tải mui kín, nhãn detection ghi car; panoptic ghi truck đúng"
-000000999009,bbox_drift,rejected,"box lệch mask do vật bị che một phần; nhãn hợp lý"
+000000000885,instance_merge,rejected,mask phủ người chơi đang cúi; box còn lại thuộc người chơi đứng phía sau. Hai box chồng nhau nhưng mask không gộp hai người.
+000000002153,instance_merge,rejected,mask phủ trọng tài ở tiền cảnh; box còn lại thuộc cầu thủ phía sau. Đây là hai người riêng biệt.
+000000009483,class_swap,confirmed,"ứng viên class_disagreement; box ghi laptop nhưng mask ghi tv. Ảnh cho thấy màn hình máy tính để bàn; gợi ý class_swap, cần thành viên xác nhận."
+000000012670,instance_merge,rejected,mask khớp người mặc áo xám cạnh gấu bông; box còn lại nằm trên người mặc áo đỏ phía sau.
+000000015254,instance_merge,confirmed,"mask phủ hai củ cà rốt sát nhau; box rộng bao cả cụm, box còn lại nằm trên một củ. Gợi ý instance_merge, cần thành viên xác nhận."
+000000018380,instance_merge,rejected,mask phủ bé gái; box còn lại thuộc người đàn ông đang bế bé.
+000000018380,instance_merge,rejected,mask phủ người đàn ông phía sau; box còn lại nằm trên người ngồi phía trước.
+000000018380,instance_merge,rejected,mask khớp người phụ nữ lớn tuổi bên trái; box kia thuộc người phụ nữ kế bên.
+000000018380,instance_merge,rejected,mask khớp người phụ nữ áo xanh nhạt; box kia thuộc người phụ nữ lớn tuổi sát bên.
+000000018380,instance_merge,rejected,mask phủ chiếc ly bên phải; box còn lại nằm trên chiếc ly riêng ở bên trái.
+000000019402,instance_merge,rejected,mask phủ người bên trái; box còn lại thuộc người bên phải. Hai box chồng nhau nhưng là hai người riêng biệt.
