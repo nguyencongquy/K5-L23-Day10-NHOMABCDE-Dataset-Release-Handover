@@ -1,7 +1,8 @@
-# Báo cáo nhóm <<XX>>
+# Báo cáo nhóm ABCDE
 
 ## 1. Số liệu luyện tập
-- F1 theo seed (rule / cross_check / overall): <<seed: ... / ... / ...>>
+- Seed `3007`, điểm tự đo đã làm tròn: F1 lỗi luật ≈ **0,9**, lỗi gán nhãn ≈ **0,7**, tổng ≈ **0,8**. Truy vết có F1 ≈ **1,0** cho cả ba mục.
+- Bản nộp có **16 lỗi** gồm 9 lỗi luật và 7 lỗi nhãn. Seed phụ `3008` báo 10 lỗi luật. Lô sạch báo 0 lỗi luật.
 - Lô sạch sau tích hợp: **10 ứng viên trên 8/50 ảnh**.
 - Seed luyện tập `3007` sau tích hợp: **54 ứng viên trên 37/250 ảnh**.
 
@@ -64,16 +65,18 @@ Thử nghiệm này đo khối lượng review theo ngưỡng, chưa có kết l
 Các lần chạy chỉ dùng `delivery/`.
 
 ## 2. Vì sao báo hết ứng viên làm F1 giảm?
-<<Trả lời bằng số của nhóm.>>
+Trên seed `3007`, validator sinh 54 ứng viên nhưng review chỉ xác nhận 7 lỗi nhãn khác nhau. Log có 52 dòng vì hai dòng mỗi dòng mô tả hai ứng viên. Lô sạch vẫn có 10 ứng viên gộp instance. Nếu nộp mọi ứng viên, các ca box chồng do vật đứng sát nhau hoặc bị che sẽ tạo thêm false positive, làm giảm precision và kéo F1 xuống khi recall giữ nguyên.
 
 ## 3. Quyết định và lineage
-<<QC v1 a/b, kết luận, vì sao R-021 phải xem lại hoặc train lại.>>
+V1 có **16/250 đơn vị lỗi (6,4%)**, tính mỗi ảnh hoặc cảnh bị rò split một lần. Tỷ lệ vượt ngưỡng 2%, nên lineage ghi **HOLD** cho `lab250_68efac8c866e`. Truy vấn impact báo `R-021: affected=True action=review_or_retrain` vì run này đã train từ v1. Khi tạo v2, nhóm chuyển 5 ảnh sang rework, giữ 245 cặp ảnh–nhãn với 1.675 box. Bộ kiểm tra bàn giao đạt **17 PASS, 0 FAIL**.
 
 ## 4. Hash chứng minh gì, không chứng minh gì?
-<<>>
+SHA-256 dùng để đối chiếu byte của file với bản ghi manifest hoặc đối chiếu gói ZIP với checksum đã công bố. Chất lượng nhãn, độ đầy đủ của box và việc tuân thủ guideline vẫn cần kiểm tra riêng. Nhóm đã mở kiểm hai ảnh sai hash, thấy ảnh hiển thị bình thường, rồi ghi SHA-256 theo nội dung thực tế trong manifest v2.
 
 ## 5. Truy vết
-<<Tiêu chí tầng a/b, vì sao lấy guideline theo job.>>
+Ticket nêu lớp `bottle` ở `scene_197` và `scene_309`. Nhóm lọc các ảnh có box `bottle` từ job dùng v1.2. Hai ảnh trong cảnh nêu ở ticket vào `tier_a`, bốn ảnh từ cảnh khác vào `tier_b`. `notify` gồm A02, A04, A05, Q01 và Q03. Nhóm lấy phiên bản guideline từ `jobs.csv` vì đây là hướng dẫn của job và trường guideline trên từng ảnh có thể là dữ liệu bị gài lỗi.
 
 ## 6. Bug hoặc điểm chưa rõ trong lab (nếu có)
-<<>>
+Lần dựng đầu, H9 thất bại vì script thống kê dùng cả chuỗi `0 person` làm tên lớp. Nhóm cập nhật `release_csv.py` để đọc mã và tên lớp đúng định dạng. Tạo lại hai bảng từ bộ ảnh và nhãn v2 cho kết quả khớp từng byte với bản bàn giao.
+
+Bản seed `3007` dùng để bàn giao được dựng lại từ cùng seed và xác minh đúng release ID vì một bản cục bộ trước đó có JPEG thay đổi sau khi tạo lô. Bản bàn giao giữ nguyên dữ liệu v1 đã dựng lại. Các ghi chú của Vinh bị lỗi mã hóa được phục hồi theo ngữ cảnh. Mười kết luận và các mã ảnh, box, segment được giữ nguyên.
