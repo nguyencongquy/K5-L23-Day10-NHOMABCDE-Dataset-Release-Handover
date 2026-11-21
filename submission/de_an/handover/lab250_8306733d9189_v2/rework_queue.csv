@@ -1,0 +1,8 @@
+image,type,annotator,reviewer,action
+img_0132,bbox_out_of_bounds,A03,Q02,rework
+img_0048,class_swap,A02,Q01,rework
+img_0068,class_swap,A04,Q03,rework
+img_0122,class_swap,A02,Q01,rework
+img_0205,class_swap,A02,Q01,rework
+img_0143,duplicate_box,A05,Q01,rework
+img_0111,missing_image,A04,Q03,rework

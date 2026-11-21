@@ -80,3 +80,10 @@ Ticket nêu lớp `bottle` ở `scene_197` và `scene_309`. Nhóm lọc các ả
 Lần dựng đầu, H9 thất bại vì script thống kê dùng cả chuỗi `0 person` làm tên lớp. Nhóm cập nhật `release_csv.py` để đọc mã và tên lớp đúng định dạng. Tạo lại hai bảng từ bộ ảnh và nhãn v2 cho kết quả khớp từng byte với bản bàn giao.
 
 Bản seed `3007` dùng để bàn giao được dựng lại từ cùng seed và xác minh đúng release ID vì một bản cục bộ trước đó có JPEG thay đổi sau khi tạo lô. Bản bàn giao giữ nguyên dữ liệu v1 đã dựng lại. Các ghi chú của Vinh bị lỗi mã hóa được phục hồi theo ngữ cảnh. Mười kết luận và các mã ảnh, box, segment được giữ nguyên.
+
+## Đề ẩn 04
+
+- QC v1: 21/250 (8,4%), quyết định Hold.
+- Review: 39 ca, gồm 11 confirmed và 28 rejected.
+- V2 detection: 243 ảnh, 1.615 nhãn YOLO, 7 ảnh chuyển sang rework.
+- Kiểm tra bàn giao: 17 PASS, 0 FAIL. Hồ sơ và bản v2 nằm trong `submission/de_an/`.

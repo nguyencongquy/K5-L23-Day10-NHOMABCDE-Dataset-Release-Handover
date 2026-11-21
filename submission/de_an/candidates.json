@@ -1,0 +1,1035 @@
+{
+  "candidates": [
+    {
+      "type": "class_disagreement",
+      "image": "img_0047",
+      "segment_id": 11762892,
+      "segment_class": "cow",
+      "segment_bbox": [
+        283,
+        187,
+        563,
+        355
+      ],
+      "segment_area": 15240,
+      "box_index": 0,
+      "bbox_iou": 0.9896285346997985,
+      "intersection_pixels": 15240,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.3209164227505317,
+      "box_bbox": [
+        282.71008,
+        186.29976000000005,
+        564.02016,
+        355.26984
+      ],
+      "box_class": "horse"
+    },
+    {
+      "type": "class_disagreement",
+      "image": "img_0048",
+      "segment_id": 9030677,
+      "segment_class": "tv",
+      "segment_bbox": [
+        129,
+        30,
+        360,
+        184
+      ],
+      "segment_area": 28512,
+      "box_index": 0,
+      "bbox_iou": 0.9981192494367703,
+      "intersection_pixels": 28512,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.8014842300556586,
+      "box_bbox": [
+        128.87,
+        30.149999999999988,
+        360.04999999999995,
+        184.02
+      ],
+      "box_class": "laptop"
+    },
+    {
+      "type": "class_disagreement",
+      "image": "img_0068",
+      "segment_id": 161169,
+      "segment_class": "skis",
+      "segment_bbox": [
+        168,
+        388,
+        209,
+        393
+      ],
+      "segment_area": 100,
+      "box_index": 0,
+      "bbox_iou": 0.9261946367155759,
+      "intersection_pixels": 98,
+      "segment_coverage": 0.98,
+      "box_coverage": 0.5025641025641026,
+      "box_bbox": [
+        168.65984,
+        387.92002499999995,
+        208.01984000000002,
+        393.11012500000004
+      ],
+      "box_class": "snowboard"
+    },
+    {
+      "type": "class_disagreement",
+      "image": "img_0122",
+      "segment_id": 12840487,
+      "segment_class": "person",
+      "segment_bbox": [
+        400,
+        219,
+        500,
+        370
+      ],
+      "segment_area": 8267,
+      "box_index": 1,
+      "bbox_iou": 0.9949008096341013,
+      "intersection_pixels": 8267,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.5474834437086092,
+      "box_bbox": [
+        399.68000000000006,
+        219.15993749999998,
+        500,
+        370.1300625
+      ],
+      "box_class": "baseball glove"
+    },
+    {
+      "type": "class_disagreement",
+      "image": "img_0205",
+      "segment_id": 2839688,
+      "segment_class": "person",
+      "segment_bbox": [
+        101,
+        84,
+        314,
+        247
+      ],
+      "segment_area": 17335,
+      "box_index": 2,
+      "bbox_iou": 0.992429181209252,
+      "intersection_pixels": 17335,
+      "segment_coverage": 1.0,
+      "box_coverage": 0.49929433451424293,
+      "box_bbox": [
+        101.00999999999999,
+        84.419829,
+        313.53999999999996,
+        247.459959
+      ],
+      "box_class": "potted plant"
+    },
+    {
+      "image": "img_0008",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        2167701
+      ],
+      "evidence": {
+        "segment_area": 44958,
+        "box_pixel_intersections": [
+          44958,
+          14315
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3184
+        ],
+        "box_share_per_box": [
+          0.6604,
+          0.238
+        ],
+        "box_iou": 0.2169
+      }
+    },
+    {
+      "image": "img_0009",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        2
+      ],
+      "segment_ids": [
+        10717577
+      ],
+      "evidence": {
+        "segment_area": 156010,
+        "box_pixel_intersections": [
+          122179,
+          59467
+        ],
+        "segment_share_per_box": [
+          0.7831,
+          0.3812
+        ],
+        "box_share_per_box": [
+          0.813,
+          0.7549
+        ],
+        "box_iou": 0.1402
+      }
+    },
+    {
+      "image": "img_0010",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        1
+      ],
+      "segment_ids": [
+        5287561
+      ],
+      "evidence": {
+        "segment_area": 2300,
+        "box_pixel_intersections": [
+          667,
+          2300
+        ],
+        "segment_share_per_box": [
+          0.29,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.3426,
+          0.4423
+        ],
+        "box_iou": 0.3751
+      }
+    },
+    {
+      "image": "img_0016",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        14605903
+      ],
+      "evidence": {
+        "segment_area": 16358,
+        "box_pixel_intersections": [
+          16358,
+          7723
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4721
+        ],
+        "box_share_per_box": [
+          0.5121,
+          0.3703
+        ],
+        "box_iou": 0.2293
+      }
+    },
+    {
+      "image": "img_0016",
+      "type": "instance_merge",
+      "box_indices": [
+        4,
+        10
+      ],
+      "segment_ids": [
+        3516618
+      ],
+      "evidence": {
+        "segment_area": 8707,
+        "box_pixel_intersections": [
+          8707,
+          3507
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4028
+        ],
+        "box_share_per_box": [
+          0.4175,
+          0.3551
+        ],
+        "box_iou": 0.2402
+      }
+    },
+    {
+      "image": "img_0031",
+      "type": "instance_merge",
+      "box_indices": [
+        10,
+        13
+      ],
+      "segment_ids": [
+        14089360
+      ],
+      "evidence": {
+        "segment_area": 39039,
+        "box_pixel_intersections": [
+          39039,
+          10695
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.274
+        ],
+        "box_share_per_box": [
+          0.3013,
+          0.2197
+        ],
+        "box_iou": 0.2349
+      }
+    },
+    {
+      "image": "img_0039",
+      "type": "instance_merge",
+      "box_indices": [
+        7,
+        14
+      ],
+      "segment_ids": [
+        15945395
+      ],
+      "evidence": {
+        "segment_area": 24641,
+        "box_pixel_intersections": [
+          10417,
+          24641
+        ],
+        "segment_share_per_box": [
+          0.4228,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.4486,
+          0.5967
+        ],
+        "box_iou": 0.2684
+      }
+    },
+    {
+      "image": "img_0046",
+      "type": "instance_merge",
+      "box_indices": [
+        2,
+        3
+      ],
+      "segment_ids": [
+        12859435
+      ],
+      "evidence": {
+        "segment_area": 3430,
+        "box_pixel_intersections": [
+          3430,
+          1134
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3306
+        ],
+        "box_share_per_box": [
+          0.4107,
+          0.3873
+        ],
+        "box_iou": 0.2248
+      }
+    },
+    {
+      "image": "img_0053",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        6
+      ],
+      "segment_ids": [
+        7100070
+      ],
+      "evidence": {
+        "segment_area": 3560,
+        "box_pixel_intersections": [
+          2380,
+          3560
+        ],
+        "segment_share_per_box": [
+          0.6685,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2999,
+          0.6275
+        ],
+        "box_iou": 0.3336
+      }
+    },
+    {
+      "image": "img_0058",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        1
+      ],
+      "segment_ids": [
+        21995
+      ],
+      "evidence": {
+        "segment_area": 80772,
+        "box_pixel_intersections": [
+          80772,
+          48443
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5997
+        ],
+        "box_share_per_box": [
+          0.745,
+          0.2474
+        ],
+        "box_iou": 0.3107
+      }
+    },
+    {
+      "image": "img_0072",
+      "type": "instance_merge",
+      "box_indices": [
+        9,
+        12
+      ],
+      "segment_ids": [
+        10574416
+      ],
+      "evidence": {
+        "segment_area": 5636,
+        "box_pixel_intersections": [
+          5636,
+          2184
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3875
+        ],
+        "box_share_per_box": [
+          0.515,
+          0.4596
+        ],
+        "box_iou": 0.2449
+      }
+    },
+    {
+      "image": "img_0072",
+      "type": "instance_merge",
+      "box_indices": [
+        5,
+        8
+      ],
+      "segment_ids": [
+        12115895
+      ],
+      "evidence": {
+        "segment_area": 24076,
+        "box_pixel_intersections": [
+          11336,
+          24076
+        ],
+        "segment_share_per_box": [
+          0.4708,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2208,
+          0.8217
+        ],
+        "box_iou": 0.2319
+      }
+    },
+    {
+      "image": "img_0094",
+      "type": "instance_merge",
+      "box_indices": [
+        2,
+        3
+      ],
+      "segment_ids": [
+        10457923
+      ],
+      "evidence": {
+        "segment_area": 2673,
+        "box_pixel_intersections": [
+          2673,
+          748
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.2798
+        ],
+        "box_share_per_box": [
+          0.6537,
+          0.2174
+        ],
+        "box_iou": 0.2036
+      }
+    },
+    {
+      "image": "img_0095",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        4380379
+      ],
+      "evidence": {
+        "segment_area": 1721,
+        "box_pixel_intersections": [
+          732,
+          1721
+        ],
+        "segment_share_per_box": [
+          0.4253,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2375,
+          0.3924
+        ],
+        "box_iou": 0.2993
+      }
+    },
+    {
+      "image": "img_0099",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        10
+      ],
+      "segment_ids": [
+        354518
+      ],
+      "evidence": {
+        "segment_area": 8515,
+        "box_pixel_intersections": [
+          7575,
+          4732
+        ],
+        "segment_share_per_box": [
+          0.8896,
+          0.5557
+        ],
+        "box_share_per_box": [
+          0.3086,
+          0.2293
+        ],
+        "box_iou": 0.227
+      }
+    },
+    {
+      "image": "img_0105",
+      "type": "instance_merge",
+      "box_indices": [
+        2,
+        13
+      ],
+      "segment_ids": [
+        13073950
+      ],
+      "evidence": {
+        "segment_area": 2648,
+        "box_pixel_intersections": [
+          2648,
+          1244
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4698
+        ],
+        "box_share_per_box": [
+          0.7493,
+          0.2772
+        ],
+        "box_iou": 0.2393
+      }
+    },
+    {
+      "image": "img_0108",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        3
+      ],
+      "segment_ids": [
+        1169903
+      ],
+      "evidence": {
+        "segment_area": 5636,
+        "box_pixel_intersections": [
+          2775,
+          2861
+        ],
+        "segment_share_per_box": [
+          0.4924,
+          0.5076
+        ],
+        "box_share_per_box": [
+          0.3433,
+          0.56
+        ],
+        "box_iou": 0.0
+      }
+    },
+    {
+      "image": "img_0118",
+      "type": "bbox_drift",
+      "box_indices": [
+        1
+      ],
+      "segment_ids": [
+        8063202
+      ],
+      "evidence": {
+        "segment_area": 7309,
+        "pixels_inside_box": 5399,
+        "segment_coverage": 0.7387
+      }
+    },
+    {
+      "image": "img_0132",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        10
+      ],
+      "segment_ids": [
+        11889709
+      ],
+      "evidence": {
+        "segment_area": 7590,
+        "box_pixel_intersections": [
+          7590,
+          4489
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5914
+        ],
+        "box_share_per_box": [
+          0.4228,
+          0.2295
+        ],
+        "box_iou": 0.2427
+      }
+    },
+    {
+      "image": "img_0143",
+      "type": "instance_merge",
+      "box_indices": [
+        2,
+        3
+      ],
+      "segment_ids": [
+        7540129
+      ],
+      "evidence": {
+        "segment_area": 2150,
+        "box_pixel_intersections": [
+          2150,
+          1212
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5637
+        ],
+        "box_share_per_box": [
+          0.3981,
+          0.2986
+        ],
+        "box_iou": 0.3828
+      }
+    },
+    {
+      "image": "img_0143",
+      "type": "instance_merge",
+      "box_indices": [
+        3,
+        4
+      ],
+      "segment_ids": [
+        10609151
+      ],
+      "evidence": {
+        "segment_area": 1588,
+        "box_pixel_intersections": [
+          1588,
+          784
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4937
+        ],
+        "box_share_per_box": [
+          0.3912,
+          0.3415
+        ],
+        "box_iou": 0.392
+      }
+    },
+    {
+      "image": "img_0144",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        13
+      ],
+      "segment_ids": [
+        2337891
+      ],
+      "evidence": {
+        "segment_area": 1279,
+        "box_pixel_intersections": [
+          396,
+          1279
+        ],
+        "segment_share_per_box": [
+          0.3096,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.3837,
+          0.8913
+        ],
+        "box_iou": 0.2286
+      }
+    },
+    {
+      "image": "img_0151",
+      "type": "instance_merge",
+      "box_indices": [
+        7,
+        24
+      ],
+      "segment_ids": [
+        6804093
+      ],
+      "evidence": {
+        "segment_area": 2605,
+        "box_pixel_intersections": [
+          2605,
+          1145
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4395
+        ],
+        "box_share_per_box": [
+          0.5663,
+          0.4433
+        ],
+        "box_iou": 0.3433
+      }
+    },
+    {
+      "image": "img_0167",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        2
+      ],
+      "segment_ids": [
+        11950108
+      ],
+      "evidence": {
+        "segment_area": 2049,
+        "box_pixel_intersections": [
+          1250,
+          2049
+        ],
+        "segment_share_per_box": [
+          0.6101,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2312,
+          0.4182
+        ],
+        "box_iou": 0.1922
+      }
+    },
+    {
+      "image": "img_0167",
+      "type": "instance_merge",
+      "box_indices": [
+        5,
+        6
+      ],
+      "segment_ids": [
+        6534827
+      ],
+      "evidence": {
+        "segment_area": 5646,
+        "box_pixel_intersections": [
+          5646,
+          1946
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3447
+        ],
+        "box_share_per_box": [
+          0.7227,
+          0.3667
+        ],
+        "box_iou": 0.276
+      }
+    },
+    {
+      "image": "img_0196",
+      "type": "instance_merge",
+      "box_indices": [
+        2,
+        3
+      ],
+      "segment_ids": [
+        5619986
+      ],
+      "evidence": {
+        "segment_area": 95185,
+        "box_pixel_intersections": [
+          95185,
+          65671
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.6899
+        ],
+        "box_share_per_box": [
+          0.517,
+          0.5274
+        ],
+        "box_iou": 0.3892
+      }
+    },
+    {
+      "image": "img_0210",
+      "type": "instance_merge",
+      "box_indices": [
+        1,
+        4
+      ],
+      "segment_ids": [
+        9213828
+      ],
+      "evidence": {
+        "segment_area": 6218,
+        "box_pixel_intersections": [
+          6218,
+          1893
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3044
+        ],
+        "box_share_per_box": [
+          0.2298,
+          0.2817
+        ],
+        "box_iou": 0.2484
+      }
+    },
+    {
+      "image": "img_0210",
+      "type": "instance_merge",
+      "box_indices": [
+        8,
+        9
+      ],
+      "segment_ids": [
+        6939253
+      ],
+      "evidence": {
+        "segment_area": 14391,
+        "box_pixel_intersections": [
+          14391,
+          4924
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.3422
+        ],
+        "box_share_per_box": [
+          0.3368,
+          0.2392
+        ],
+        "box_iou": 0.1919
+      }
+    },
+    {
+      "image": "img_0210",
+      "type": "instance_merge",
+      "box_indices": [
+        9,
+        22
+      ],
+      "segment_ids": [
+        2831136
+      ],
+      "evidence": {
+        "segment_area": 4964,
+        "box_pixel_intersections": [
+          4964,
+          1638
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.33
+        ],
+        "box_share_per_box": [
+          0.2411,
+          0.2317
+        ],
+        "box_iou": 0.2873
+      }
+    },
+    {
+      "image": "img_0228",
+      "type": "instance_merge",
+      "box_indices": [
+        0,
+        1
+      ],
+      "segment_ids": [
+        3382997
+      ],
+      "evidence": {
+        "segment_area": 48020,
+        "box_pixel_intersections": [
+          48020,
+          26665
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5553
+        ],
+        "box_share_per_box": [
+          0.6405,
+          0.2723
+        ],
+        "box_iou": 0.304
+      }
+    },
+    {
+      "image": "img_0229",
+      "type": "instance_merge",
+      "box_indices": [
+        4,
+        8
+      ],
+      "segment_ids": [
+        1035763
+      ],
+      "evidence": {
+        "segment_area": 8373,
+        "box_pixel_intersections": [
+          4718,
+          8373
+        ],
+        "segment_share_per_box": [
+          0.5635,
+          1.0
+        ],
+        "box_share_per_box": [
+          0.2225,
+          0.9283
+        ],
+        "box_iou": 0.1951
+      }
+    },
+    {
+      "image": "img_0229",
+      "type": "instance_merge",
+      "box_indices": [
+        4,
+        7
+      ],
+      "segment_ids": [
+        8377222
+      ],
+      "evidence": {
+        "segment_area": 13450,
+        "box_pixel_intersections": [
+          13450,
+          5869
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.4364
+        ],
+        "box_share_per_box": [
+          0.6342,
+          0.4508
+        ],
+        "box_iou": 0.2447
+      }
+    },
+    {
+      "image": "img_0245",
+      "type": "instance_merge",
+      "box_indices": [
+        7,
+        8
+      ],
+      "segment_ids": [
+        11846483
+      ],
+      "evidence": {
+        "segment_area": 1610,
+        "box_pixel_intersections": [
+          1610,
+          443
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.2752
+        ],
+        "box_share_per_box": [
+          0.5025,
+          0.211
+        ],
+        "box_iou": 0.2171
+      }
+    },
+    {
+      "image": "img_0247",
+      "type": "instance_merge",
+      "box_indices": [
+        7,
+        8
+      ],
+      "segment_ids": [
+        10818464
+      ],
+      "evidence": {
+        "segment_area": 1115,
+        "box_pixel_intersections": [
+          1115,
+          561
+        ],
+        "segment_share_per_box": [
+          1.0,
+          0.5031
+        ],
+        "box_share_per_box": [
+          0.4607,
+          0.2297
+        ],
+        "box_iou": 0.273
+      }
+    }
+  ]
+}
